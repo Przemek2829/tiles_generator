@@ -205,4 +205,7 @@ class TilesGenerator:
             nl = '\n'
             self.logMessage(f'Zadanie generowania kafli zakończone z następującymi błędami:{nl}{nl.join(self.generator_task.errors)}', Qgis.Warning, 'loud')
         else:
-            self.logMessage(f'Zadanie generowania kafli zakończone, wynik zapisany w lokalizacji {self.generator_task.tiles_path}', Qgis.Success, 'loud')
+            tiles_path = self.generator_task.tiles_path
+            if self.generator_task.zip_pack:
+                tiles_path = tiles_path.replace('.qgisweb', '.zip')
+            self.logMessage(f'Zadanie generowania kafli zakończone, wynik zapisany w lokalizacji {tiles_path}', Qgis.Success, 'loud')

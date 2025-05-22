@@ -231,7 +231,7 @@ class GeneratorTask(QThread):
 			with open(self.tiles_path, "w", encoding="utf-8") as file:
 				file.write(base64.b64encode(json.dumps(data).encode("utf-8")).decode("utf-8"))
 			if self.zip_pack:
-				with zipfile.ZipFile(self.tiles_path.replace('qgisweb', 'zip'), 'w', compression=zipfile.ZIP_DEFLATED) as arch:
+				with zipfile.ZipFile(self.tiles_path.replace('.qgisweb', '.zip'), 'w', compression=zipfile.ZIP_DEFLATED) as arch:
 					arch.write(self.tiles_path, arcname=os.path.basename(self.tiles_path))
 				try:
 					os.remove(self.tiles_path)
