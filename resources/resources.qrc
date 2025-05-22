@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/plugins/tiles_generator" >
+        <file>c-geoportal.png</file>
+        <file>icon.png</file>
+        <file>reject.png</file>
+    </qresource>
+</RCC>
