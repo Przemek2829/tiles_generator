@@ -3,14 +3,14 @@
 # This file should be included when you package your plugin.# Mandatory items:
 
 [general]
-name=Generator kafli dla C-GeoPortal
+name=Generator mapy dla www.c-geoportal.pl
 qgisMinimumVersion=3.22
 description=Wtyczka generuje pakiet kafli na podstawie treści mapy
-version=1.0.0
+version=1.0.1
 author=GIS Mates
 email=gis.mates.gm@gmail.com
 
-about=Wtyczka generuje pakiet kafli na podstawie treści mapy, wykorzystując wybrane warstwy wektorowe załadowane w projekcie. Wynikiem jest pojedynczy plik zawierający parametry zasięgu oraz wszystkie obrazy kafli. Pozwala to na łatwe przenoszenie i wykorzystanie mapy w innych aplikacjach. Wtyczka jest przydatna do tworzenia samodzielnych pakietów mapowych offline lub do integracji z systemami wymagającymi osadzonych danych kafelkowych (m.in. C-GeoPortal).
+about=Wtyczka generuje pakiet kafli na podstawie treści mapy, wykorzystując wybrane warstwy wektorowe załadowane w projekcie. Wynikiem jest pojedynczy plik zawierający parametry zasięgu oraz wszystkie obrazy kafli. Pozwala to na łatwe przenoszenie i wykorzystanie mapy w innych aplikacjach. Wtyczka jest przydatna do tworzenia samodzielnych pakietów mapowych offline lub do integracji z systemami wymagającymi osadzonych danych kafelkowych, m.in. C-GeoPortal (www.c-geoportal.pl).
 
 tracker=https://github.com/Przemek2829/tiles_generator/issues
 repository=https://github.com/Przemek2829/tiles_generator
@@ -25,7 +25,7 @@ hasProcessingProvider=no
 # Tags are comma separated with spaces allowed
 tags=tiles, c-geoportal
 
-homepage=https://www.gismates.com/
+homepage=https://github.com/Przemek2829/tiles_generator
 category=Plugins
 icon=./resources/icon.png
 # experimental flag

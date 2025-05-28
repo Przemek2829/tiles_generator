@@ -51,7 +51,7 @@ class TilesGenerator:
             QCoreApplication.installTranslator(self.translator)
 
         self.actions = []
-        self.menu = self.tr(u'&Generator Kafli')
+        self.menu = self.tr(u'&Generator Mapy C-GeoPortal')
 
         self.pluginIsActive = False
         self.dockwidget = None
@@ -104,14 +104,14 @@ class TilesGenerator:
     def unload(self):
         for action in self.actions:
             self.iface.removePluginMenu(
-                self.tr(u'&Generator Kafli'),
+                self.tr(u'&Generator Mapy C-GeoPortal'),
                 action)
             self.iface.removeToolBarIcon(action)
 
     def logMessage(self, message, message_level=Qgis.Info, mode='quiet'):
         if mode == 'loud':
-            self.iface.messageBar().pushMessage('Generator kafli', message, level=message_level, duration=3)
-        QgsMessageLog.logMessage(message, 'Generator kafli', level=message_level)
+            self.iface.messageBar().pushMessage('Generator mapy C-GeoPortal', message, level=message_level, duration=3)
+        QgsMessageLog.logMessage(message, 'Generator mapy C-GeoPortal', level=message_level)
 
     def run(self):
         if not self.pluginIsActive:

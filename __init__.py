@@ -40,7 +40,7 @@ def classFactory(iface):  # pylint: disable=invalid-name
         if res == 0:
             import pandas as pd
         else:
-            iface.messageBar().pushMessage('Generator Kafli',
+            iface.messageBar().pushMessage('Generator mapy C-GeoPortal',
                                            'Import modułu "mercantile" zakończony niepowodzeniem, zalecamy manualne zainstalowanie zależności',
                                            level=Qgis.Warning, duration=3)
     from .tiles_generator import TilesGenerator
